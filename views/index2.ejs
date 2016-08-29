@@ -1,0 +1,31 @@
+<% include ../partials/header.ejs %>
+
+<br>
+<div class="ui container">
+<form action="/sent/" method="" class="ui form">
+  <h1>Message Spammer <a href="/createAccount" style="display : inline-block; margin-left : 20px" class="ui button green">Get Masked #</a> </h1>
+  <p>Enter anyones number, and a masked number, and spam any friend with your custom messages. </p>
+  <h4>Masked # is <%= number %></h4>
+  <input type="text" name="masked" value="<%= number %>">
+  <br>
+  <h4>Friend's(Enemy's) #</h4>
+  <input type="text" name="enemy" value="">
+  <br>
+  <h4>Friendly Message</h4>
+  <textarea name="message" rows="8" cols="40"></textarea>
+  <h4>Enter Number of Texts to Send</h4>
+  <div class="ui small icon input">
+  <input type="text" class="" size="4" maxlength="2" class="ui mini input" name="texts">
+</div>
+  <br> <br>
+    <button class="ui button blue">Send</button>
+
+  <br> <br>
+<p>*When you press the button, it will refresh you to a success page, and you can keep on pressing the button and spam them more and more.*</p>
+</form>
+</div>
+<br>
+<br>
+<br>
+    </body>
+</html>

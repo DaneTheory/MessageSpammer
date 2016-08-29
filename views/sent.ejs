@@ -1,0 +1,24 @@
+<% include ../partials/header.ejs %>
+<br>
+<br>
+<div class="ui container">
+<form action="/sent/" method="" class="ui form">
+  <a href="/" class="ui button tiny">Go Back</a>
+  <h1>Message Spammer <a href="/createAccount" style="display : inline-block; margin-left : 20px" class="ui button green">Get Masked #</a> </h1>
+  <h5>Resend your messages if your friend didn't get the point. </h5>
+  <a href=""> Edit</a>
+  <h4 style="margin-top : 15px">Masked # : <%=maskedNumb%> </h4>
+  <h4>Friend's(Enemy's) # : <%= enemyNumb%></h4>
+  <h4>Friendly Message: <%= messageSent%></h4>
+
+    <a href="/sent/?masked=<%= maskedNumb %>&enemy=<%= enemyNumb %>&message=<%= messageSent%>" class="ui button red">SPAM</a>
+
+  <br> <br>
+<p style="margin-top : 10px">*When you press the button, it will refresh,and you can keep on pressing the button and spam them more and more.*</p>
+</form>
+</div>
+<br>
+<br>
+<br>
+    </body>
+</html>
